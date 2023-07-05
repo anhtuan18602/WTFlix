@@ -25,7 +25,7 @@ columns = st.columns(movie_per_query)
 def make_sliders():
     values = st.slider(
         'Range of release year:',
-        1920, 2023, (1980, 2023), key="slider")
+        1950, 2023, (1980, 2023), key="slider")
     return values
 
 
