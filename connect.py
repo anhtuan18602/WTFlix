@@ -1,6 +1,5 @@
 #!/usr/bin/python
 #import psycopg2
-from config import config
 import sqlite3
 def connect():
     """ Connect to the PostgreSQL database server """
