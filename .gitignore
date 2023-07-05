@@ -1,0 +1,5 @@
+database.ini
+.streamlit/secrets.toml
+backup
+.venv
+.idea
