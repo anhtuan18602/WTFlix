@@ -9,7 +9,7 @@ import re
 
 
 #list of features to be queried
-feature_types = ["keywords_features", "people_features", "genre_ids_features", "title_features"]
+feature_types = ["keywords_features", "genre_ids_features", "title_features"]
 columns = feature_types + ["id"]
 #features_weight = [1.0, 2.0, 0.5]
 #weight_dict = dict(zip(features,features_weight))
