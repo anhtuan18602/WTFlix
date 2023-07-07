@@ -4,12 +4,13 @@ from datetime import datetime
 from recommend import recommend
 from query import create_query
 
+
 headers = {
     "accept": "application/json",
-    "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkOGRlYWRmZGVhMjBhYTY5MmVmZDkyNzcwZmJjMzVmMSIsInN1YiI6IjY0OTE2MTc3MmY4ZDA5MDEwMGFiZjA1ZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3O37eW5IAoEDnXIPnH5y6LGOLFfrP_u92AkxOCNRfsA"
+    "Authorization": f"Bearer {st.secrets['tmdb_access_token']}"
 }
 
-tmdb.API_KEY = "d8deadfdea20aa692efd92770fbc35f1"
+tmdb.API_KEY = f"{st.secrets['tmdb_api_key']}"
 tmdb.REQUESTS_TIMEOUT = 5
 
 #
